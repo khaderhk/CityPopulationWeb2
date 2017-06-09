@@ -1,0 +1,175 @@
+﻿/* #region Page layout */
+html,body,#main {
+    min-height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI";
+    color: #333333;
+    font-size: 10.5pt;
+    overflow-x: hidden;
+}
+
+#pageWrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#banner {
+    height: 50px;
+    background-color: #ECECEC;
+    margin-top: -50px;
+}
+
+#footer {
+    height: 50px;
+    background-color: #ECECEC;
+    margin-bottom: -50px;
+}
+
+/* #endregion */
+
+    #footer > div > span {
+        margin-top: 3px;
+        display: block;
+    }
+
+.padding-left-zero {
+    padding-left: 0;
+}
+
+.student-metadata {
+    margin-bottom: 20px;
+}
+
+    .student-metadata > div:first-child > div > span {
+        font-size: 18px;
+        color: #333333;
+    }
+
+    .student-metadata > div > div > span {
+        color: #666667;
+    }
+
+/* #region Popup Modal styles */
+
+.modal-content .header {
+    border-bottom: 2px solid #CACACA;
+}
+
+.modal-content > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.modal-open .modal {
+    overflow-y: hidden;
+    padding-right: 0 !important;
+}
+
+.top-modal {
+    top: -100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 0 !important;
+    -webkit-transition: top 0.5s ease-out;
+    -moz-transition: top 0.5s ease-out;
+    -ms-transition: top 0.5s ease-out;
+    -o-transition: top 0.5s ease-out;
+    transition: top 0.5s ease-out;
+}
+
+.modal-dialog {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+     height: auto;
+}
+
+.top-modal .modal-content {
+    border-bottom: 3px solid mediumpurple;
+    background-color: #FFFFFF;
+    -ms-border-radius: 0;
+    border-radius: 0;
+}
+
+.top-modal .modal-wrapper {
+    margin-top: 30px;
+}
+
+.top-modal .modal-bottom {
+    margin-bottom: 40px;
+}
+
+.top-modal .modal-overlay.in {
+    -ms-opacity: -0.5;
+    opacity: -0.5;
+}
+
+.top-modal .modal-overlay {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+}
+
+/* #endregion */
+
+/* #region Font, Font weight styles */
+
+.font-light {
+    font-weight: 200;
+}
+
+.font-semi-light {
+    font-weight: 300;
+}
+
+.font-semi-bold {
+    font-weight: 600;
+}
+
+.font-smaller {
+    font-size: 12px;
+}
+
+.font-small {
+    font-size: 16px;
+}
+
+.font-medium {
+    font-size: 24px;
+}
+
+.font-large {
+    font-size: 29.333333px;
+}
+
+.font-larger {
+    font-size: 30px;
+}
+
+.font-x-smaller {
+    font-size: 18px;
+}
+
+/* #endregion */
+
+p {
+    color: #000000;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.grid {
+    margin: 20px 0;
+}

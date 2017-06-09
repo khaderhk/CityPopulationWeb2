@@ -1,0 +1,136 @@
+﻿/* #region Grid styles */
+
+.grid-header {
+    background-color: #EEEEEE;
+}
+
+.pager {
+    margin: 0;
+}
+
+    .pager li > a {
+        background-color: #e7e7e7;
+        margin-right: 5px;
+        border: none;
+        -ms-border-radius: 0;
+        border-radius: 0;
+        padding: 2px 4px;
+        padding-bottom: 5px;
+    }
+
+    .pager .disabled a {
+        background-color: #EBEBEB;
+    }
+
+    .pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span {
+        color: #777;
+        cursor: not-allowed;
+        background-color: #EBEBEB;
+    }
+
+.table > thead > tr {
+    background-color: #eeeeee;
+    height: 30px;
+}
+
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        border-right: 2px solid #F4F4F4;
+        border-bottom: 2px solid #F4F4F4;
+        border-left: 2px solid #F4F4F4;
+    }
+
+.table > thead > tr {
+    border-top: 1px solid #F4F4F4;
+}
+
+    .table > thead > tr > th {
+        border-bottom: 2px solid mediumpurple;
+        font-weight: 600;
+        padding: 4px 8px;
+    }
+
+
+/* #endregion */
+
+/* #region Custom checkbox */
+[type='checkbox'] {
+    position: absolute;
+    left: -9999px;
+}
+
+    [type="checkbox"]:not(:checked) + label,
+    [type="checkbox"]:checked + label {
+        position: relative;
+        cursor: pointer;
+    }
+
+        [type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before {
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: -5px;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #818181;
+            background: white;
+            -ms-border-radius: 3px;
+            border-radius: 3px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+            -ms-box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+            box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+        }
+
+        [type="checkbox"]:not(:checked) + label:after,
+        [type="checkbox"]:checked + label:after {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -5px;
+            font-size: 11px;
+            color: #333333;
+            font-family: "Segoe ui symbol";
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            -ms-transition: all .2s;
+            -o-transition: all .2s;
+            transition: all .2s;
+        }
+
+        /* checked mark aspect changes */
+        [type="checkbox"]:not(:checked) + label:after {
+            -ms-opacity: 0;
+            opacity: 0;
+            -webkit-transform: scale(0);
+            -moz-transform: scale(0);
+            -ms-transform: scale(0);
+            -o-transform: scale(0);
+            transform: scale(0);
+        }
+
+        [type="checkbox"]:checked + label:after {
+            -ms-opacity: 1;
+            opacity: 1;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+        }
+
+    [type="checkbox"]:disabled:not(:checked) + label:before,
+    [type="checkbox"]:disabled:checked + label:before {
+        -webkit-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+        border-color: #bbb;
+        background-color: #ddd;
+    }
+
+    [type="checkbox"]:disabled:checked + label:after {
+        color: #999;
+    }
+
+    [type="checkbox"]:disabled + label {
+        color: #aaa;
+    }
+/* #endregion */

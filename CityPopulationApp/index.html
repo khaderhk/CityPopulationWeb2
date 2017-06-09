@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>City Data Website</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/CustomizedGlyphs.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <link href="Content/knockoutgrid.css" rel="stylesheet" />
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+
+    <div style="margin:0 auto;"> <h4 class="caption">US City Population Data</h4>
+        <div id="main" class="row">
+            <div class="row padding-left-zero">
+                <span>City</span>
+                <input id="searchString" data-bind="text: searchString" />
+                <span><a href="#" data-bind="click:searchCity(), text:'Search'"></a></span>
+            </div>
+            <div class="col-lg-5" data-bind="simpleGrid: pagingGrid"></div>
+
+            <div class="row">
+                <div class="modal top-modal col-lg-12" data-keyboard="true" id="cityModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-dialog col-lg-12">
+                        <div class="modal-content col-lg-12">
+                            <div class="modal-wrapper">
+
+                                <div class="col-lg-12 modal-bottom">
+                                    <div class="col-lg-9 padding-left-zero student-metadata" data-bind="with: cityModel">
+                                        <div class="col-lg-12 padding-left-zero">
+                                            <div class="col-lg-3"><h4 data-bind="text: city" /></div>
+
+                                        </div>
+                                        <div class="col-lg-12 padding-left-zero">
+                                            <div class="col-lg-3">State<span style="float:right" data-bind="text: state"></span></div>
+                                            <div class="col-lg-3">Population<input id="inPop" style="float:right;" data-bind="value: pop" /></div>
+                                            <div class="col-lg-3">Zip<span style="float:right" data-bind="text: _id"></span></div>
+                                        </div>
+                                        <div class="col-lg-12 padding-left-zero">
+                                            <span><button id="save" data-bind="click: UpdateCity">Save</button></span>
+                                            <span><button id="cancenl" data-bind="click: Cancel">Cancel</button></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="gridWithColumnTemplate" type="text/html">
+        <td><a href="#" data-bind="click: $parent.ViewModel.ViewCity, text: city"></a></td>
+        <td data-bind="text: state"></td>
+        <td data-bind="text: _id"></td>
+        <td data-bind="text: pop"></td>
+    </script>
+
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/knockout-3.2.0.debug.js"></script>
+    <script src="Scripts/knockoutgrid.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/main.js"></script>
+</body>
+</html>

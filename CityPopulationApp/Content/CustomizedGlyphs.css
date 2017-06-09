@@ -1,0 +1,202 @@
+﻿.windows-icon-timesand:before {
+    content: "⏳";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-requestaccess:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-search-right:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-arrow-circle-left:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 30px;
+}
+
+.windows-icon-arrow-circle-right:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 30px;
+}
+
+.windows-icon-caret-down:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.inner-addon .glyphicon.windows-icon-caret-down {
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+.windows-icon-chevron-right:before {
+    content: ">";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.windows-icon-chevron-left:before {
+    content: "<";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.windows-icon-number-circle-completed:before {
+    content: "❶";
+    font-family: 'Segoe UI Symbol';
+    font-size: 30px;
+}
+
+.windows-icon-one-circle:before {
+    content: "①";
+    font-family: 'Segoe UI Symbol';
+    font-size: 30px;
+}
+
+.windows-icon-two-circle:before {
+    content: "②";
+    font-family: 'Segoe UI Symbol';
+    font-size: 30px;
+}
+
+.windows-icon-edit:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-sort:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-trash:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-file-o:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-upload:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-download:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-cache:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-pause:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.windows-icon-cancel:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.windows-icon-close-modal:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+    border: 2px solid #1570a6;
+}
+
+.windows-icon-approve:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.windows-icon-add:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.windows-icon-save:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.windows-icon-folder-close:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.windows-icon-settings:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-single-user:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-multi-user:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-diagnose:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 19px;
+}
+
+.windows-icon-add-user:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
+
+.windows-icon-approve-circle:before {
+    content: "";
+    font-family: "Segoe UI Symbol";
+    font-size: 16px;
+    -ms-border-radius: 50px;
+    border-radius: 50px;
+    padding: 1px 5px 2px;
+    color: white;
+    background-color: #78A912;
+}
+
+.windows-icon-close-alert:before {
+    content: "";
+    font-family: 'Segoe UI Symbol';
+    font-size: 16px;
+}
